@@ -1,0 +1,317 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+    font-size:18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+    button {
+        //background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        background-color: hsl(235, 46%, 20%);
+        
+    }
+
+    button:hover {
+        color:white;
+    }
+@media only screen and (max-width: 875px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        border-radius: 20px;
+        width: 350px;
+    }
+
+    .profile {
+        position: static;
+        margin-top: -50px;
+        margin-bottom: 85px;
+        height: auto;
+
+        .report {
+            position:relative;
+            background-color: hsl(246, 80%, 60%);
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 130px;
+            
+
+            img{
+                
+                height: 70px;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+
+            #title {
+                p{
+                    margin: 0; 
+                    padding: 0 20px;
+                }
+
+                #name {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .timeframes {
+            position: relative;
+            color: hsl(235, 45%, 61%);
+            
+            height: 100px;
+            top: 190px;
+            background-color: hsl(235, 46%, 20%);
+
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .timeframe {
+            
+            padding-top: 55px;
+            position: static;
+            //background-color: blue;
+        }
+        
+    }
+
+    .category {
+        //margin-top:30px;
+        height:auto;;
+        position: static;
+        //border: 2px solid white;
+
+
+        .backTile {
+            background-color: red;
+            height: 70px;
+            text-align: right;
+            svg {
+                position: relative;
+                padding-right: 15px;
+                bottom: 5px;
+            }
+        }
+         #work-back-tile {
+             background-color: hsl(15, 100%, 70%);
+         }
+         #play-back-tile {
+             background-color: hsl(195, 74%, 62%);
+         }
+         #study-back-tile {
+            background-color: hsl(348, 100%, 68%);
+         }
+         #exercise-back-tile {
+            background-color: hsl(145, 58%, 55%);
+         }
+         #social-back-tile {    
+            background-color: hsl(264, 64%, 52%);
+         }
+         #selfcare-back-tile {
+            background-color: hsl(43, 84%, 65%);
+         }
+        .frontTile {
+            position: relative;
+            bottom:30px;
+            background-color: hsl(235, 46%, 20%);
+            height: 120px;
+
+            .frontTileHeader {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 25px 25px 10px 25px;
+                svg {
+                    padding: 5px 15px; 
+                }
+            }
+
+            .frontTileInfo {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 35px 40px 25px;
+
+                .current {
+                    font-size: 32px;
+                    font-weight: 300;
+                }
+                .past {
+                    padding-top: 10px;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:876px) and (max-width: 1440px) {
+    body {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25vh;
+    }
+    
+    #body {
+        display:grid;
+        grid-template-columns: repeat(4, 200px);
+        row-gap: 0px;;
+        column-gap: 20px;;
+    }
+    .card {
+        border-radius: 20px;
+        width: auto;
+        
+    }
+
+    .profile {
+        grid-row-start: 1;;
+        grid-row-end: 3;
+        position: static;
+        //border: 2px solid white;
+        height: 410px;
+        .report {
+            position: relative;
+            bottom: 175px;
+            background-color: hsl(246, 80%, 60%);
+            display:flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            height: 275px;
+
+            
+            
+
+            img{
+                margin: 20px;
+                height: 70px;
+                width: 70px;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+
+            #title {
+                p{
+                    font-size: small;
+                    font-weight: 300;
+                    margin: 0; 
+                    padding: 0 20px;
+                }
+
+                #name {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .timeframes {
+            position: relative;
+            color: hsl(235, 45%, 61%);
+            
+            height: 175px;
+            bottom: -235px;
+            background-color: hsl(235, 46%, 20%);
+            
+            display:flex;
+            flex-direction: column;
+            
+        }
+        .timeframe {
+            #daily {
+                padding-top: 45px;;
+            }
+            font-size: 14px;
+            padding: 15px 0 0 25px;
+            position: static;
+            //background-color: blue;
+        }
+    }
+
+    .category {
+        //margin-top:30px;
+        
+        position: static;
+        //border: 2px solid white;
+
+
+        .backTile {
+            background-color: red;
+            height: 70px;
+            text-align: right;
+            svg {
+                position: relative;
+                padding-right: 15px;
+                //bottom: 5px;
+            }
+        }
+         #work-back-tile {
+             background-color: hsl(15, 100%, 70%);
+         }
+         #play-back-tile {
+             background-color: hsl(195, 74%, 62%);
+         }
+         #study-back-tile {
+            background-color: hsl(348, 100%, 68%);
+         }
+         #exercise-back-tile {
+            background-color: hsl(145, 58%, 55%);
+         }
+         #social-back-tile {    
+            background-color: hsl(264, 64%, 52%);
+         }
+         #selfcare-back-tile {
+            background-color: hsl(43, 84%, 65%);
+         }
+        .frontTile {
+            position: relative;
+            bottom:30px;
+            background-color: hsl(235, 46%, 20%);
+            height: 150px;
+
+            .frontTileHeader {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 25px 25px 10px 25px;
+                svg {
+                    padding: 5px 5px; 
+                }
+            }
+
+            .frontTileInfo {
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0 35px 40px 25px;
+
+                .current {
+                    font-size: 32px;
+                    font-weight: 300;
+                }
+                .past {
+                    padding-top: 10px;
+                    font-size: small;
+                    font-weight: 300;
+                    color: hsl(235, 45%, 61%);
+                }
+            }
+        }
+    }
+
+}

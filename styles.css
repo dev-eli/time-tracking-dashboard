@@ -1,0 +1,343 @@
+body {
+  background-color: #0f1424;
+  color: white;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+button {
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background-color: #1c1f4a;
+}
+
+button:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 875px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    border-radius: 20px;
+    width: 350px;
+  }
+  .profile {
+    position: static;
+    margin-top: -50px;
+    margin-bottom: 85px;
+    height: auto;
+  }
+  .profile .report {
+    position: relative;
+    background-color: #5847eb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 130px;
+  }
+  .profile .report img {
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  .profile .report #title p {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .profile .report #title #name {
+    font-size: 26px;
+  }
+  .profile .timeframes {
+    position: relative;
+    color: #6f76c8;
+    height: 100px;
+    top: 190px;
+    background-color: #1c1f4a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .profile .timeframe {
+    padding-top: 55px;
+    position: static;
+  }
+  .category {
+    height: auto;
+    position: static;
+  }
+  .category .backTile {
+    background-color: red;
+    height: 70px;
+    text-align: right;
+  }
+  .category .backTile svg {
+    position: relative;
+    padding-right: 15px;
+    bottom: 5px;
+  }
+  .category #work-back-tile {
+    background-color: #ff8c66;
+  }
+  .category #play-back-tile {
+    background-color: #56c2e6;
+  }
+  .category #study-back-tile {
+    background-color: #ff5c7c;
+  }
+  .category #exercise-back-tile {
+    background-color: #4acf81;
+  }
+  .category #social-back-tile {
+    background-color: #7536d3;
+  }
+  .category #selfcare-back-tile {
+    background-color: #f1c65b;
+  }
+  .category .frontTile {
+    position: relative;
+    bottom: 30px;
+    background-color: #1c1f4a;
+    height: 120px;
+  }
+  .category .frontTile .frontTileHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 25px 25px 10px 25px;
+  }
+  .category .frontTile .frontTileHeader svg {
+    padding: 5px 15px;
+  }
+  .category .frontTile .frontTileInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 35px 40px 25px;
+  }
+  .category .frontTile .frontTileInfo .current {
+    font-size: 32px;
+    font-weight: 300;
+  }
+  .category .frontTile .frontTileInfo .past {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 876px) and (max-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25vh;
+  }
+  #body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (200px)[4];
+        grid-template-columns: repeat(4, 200px);
+    row-gap: 0px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .card {
+    border-radius: 20px;
+    width: auto;
+  }
+  .profile {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+    position: static;
+    height: 410px;
+  }
+  .profile .report {
+    position: relative;
+    bottom: 175px;
+    background-color: #5847eb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    height: 275px;
+  }
+  .profile .report img {
+    margin: 20px;
+    height: 70px;
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  .profile .report #title p {
+    font-size: small;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .profile .report #title #name {
+    font-size: 36px;
+  }
+  .profile .timeframes {
+    position: relative;
+    color: #6f76c8;
+    height: 175px;
+    bottom: -235px;
+    background-color: #1c1f4a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile .timeframe {
+    font-size: 14px;
+    padding: 15px 0 0 25px;
+    position: static;
+  }
+  .profile .timeframe #daily {
+    padding-top: 45px;
+  }
+  .category {
+    position: static;
+  }
+  .category .backTile {
+    background-color: red;
+    height: 70px;
+    text-align: right;
+  }
+  .category .backTile svg {
+    position: relative;
+    padding-right: 15px;
+  }
+  .category #work-back-tile {
+    background-color: #ff8c66;
+  }
+  .category #play-back-tile {
+    background-color: #56c2e6;
+  }
+  .category #study-back-tile {
+    background-color: #ff5c7c;
+  }
+  .category #exercise-back-tile {
+    background-color: #4acf81;
+  }
+  .category #social-back-tile {
+    background-color: #7536d3;
+  }
+  .category #selfcare-back-tile {
+    background-color: #f1c65b;
+  }
+  .category .frontTile {
+    position: relative;
+    bottom: 30px;
+    background-color: #1c1f4a;
+    height: 150px;
+  }
+  .category .frontTile .frontTileHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 25px 25px 10px 25px;
+  }
+  .category .frontTile .frontTileHeader svg {
+    padding: 5px 5px;
+  }
+  .category .frontTile .frontTileInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 35px 40px 25px;
+  }
+  .category .frontTile .frontTileInfo .current {
+    font-size: 32px;
+    font-weight: 300;
+  }
+  .category .frontTile .frontTileInfo .past {
+    padding-top: 10px;
+    font-size: small;
+    font-weight: 300;
+    color: #6f76c8;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
